@@ -8,7 +8,7 @@ namespace Entities.Abstract
 {
     public interface IDipslayEntity
     {
-        public int DisplayOrder { get; set; }
+        int DisplayOrder { get; set; }
         bool IsDisplay { get; set; }
     }
 }

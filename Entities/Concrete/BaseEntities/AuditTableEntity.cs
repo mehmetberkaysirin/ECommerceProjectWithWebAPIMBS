@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete.BaseEntities
 {
-    public class AuditTableEntity : BaseEntity, ICreatedEntity,IUpdateEntity
+    public class AuditableEntity : BaseEntity, ICreatedEntity, IUpdateEntity
     {
-        public int CreatedUserId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime CreatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int? UpdateUserId { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime? UpdatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int CreatedUserId { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public int? UpdatedUserId { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }

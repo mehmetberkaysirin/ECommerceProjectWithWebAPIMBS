@@ -8,7 +8,7 @@ namespace Entities.Abstract
 {
     public interface IUpdateEntity
     {
-        public int? UpdateUserId { get; set; }
-        public DateTime? UpdatedDate { get; set; }
+        int? UpdatedUserId { get; set; }
+        DateTime? UpdatedDate { get; set; }
     }
 }

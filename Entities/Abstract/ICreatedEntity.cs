@@ -8,7 +8,7 @@ namespace Entities.Abstract
 {
     public interface ICreatedEntity
     {
-        public int CreatedUserId { get; set; }
-        public DateTime CreatedDate { get; set; }
+        int CreatedUserId { get; set; }
+        DateTime CreatedDate { get; set; }
     }
 }
